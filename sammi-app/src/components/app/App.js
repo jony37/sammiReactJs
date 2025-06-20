@@ -1,20 +1,22 @@
-import { StrictMode } from "react";
-import "./App.css";
-import Button from "../button/button";
-import Header from "../header/header";
-import Field from "../field/field";
+const User = (props) => {
+  console.log(props);
 
-
-function App() {
   return (
-    <div className="App">
-      <StrictMode>
-        <Header />
-      </StrictMode>
-      <Field />
-      <Button />
+    <div>
+      <h1>
+        Mening ismim {props.firstName}, Sharifim {props.lastName}
+      </h1>
+      <a href={props.link}>Youtube kanalim</a>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <div>
+      <User firstName="Jonpolat" lastName="Ravshanov" link="instagram.com" />
+    </div>
+  );
+};
 
 export default App;
