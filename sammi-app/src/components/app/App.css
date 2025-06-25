@@ -1,3 +1,13 @@
 .App {
     text-align: center;
 }
+
+.btn {
+    margin-left: 10px !important;
+}
+
+.coutn {
+    font-size: 24px;
+    padding-top: 14px;
+    padding-left: 14px;
+}
